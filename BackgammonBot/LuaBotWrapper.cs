@@ -1,42 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using BackgammonBot.Utils;
 using MoonSharp.Interpreter;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace BackgammonBot.Utils
+namespace BackgammonBot
 {
     public class Backgammon : LuaWrapper
     {
         public Backgammon() : base("src.backgammonBot")
         {
             
-        }
-
-        public void CanMoveAtAll(JArray board)
-        {
-        }
-
-        public void SetBoard(JArray board)
-        {
-            CallModule("backgammon", "createBoard", board);
-        }
-
-        public void SetMe(int me)
-        {
-            DynValue value = DynValue.NewNumber(me);
-            ((Table) Script.Globals["backgammon"]).Set("me", value);
-        }
-
-        public void SetDices(object dices)
-        {
-            CallModule("backgammon", "setDice", dices);
-        }
-
-        public void SetPlayer(int player)
-        {
-            DynValue value = DynValue.NewNumber(player);
-            ((Table) Script.Globals["backgammon"]).Set("player", value);
         }
 
         public JObject CreateBoard()
