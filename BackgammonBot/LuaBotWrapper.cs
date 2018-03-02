@@ -9,7 +9,7 @@ namespace BackgammonBot
 {
     public class Backgammon : LuaWrapper
     {
-        public Backgammon() : base("src.backgammonBot")
+        public Backgammon() : base("src.bot")
         {
             
         }

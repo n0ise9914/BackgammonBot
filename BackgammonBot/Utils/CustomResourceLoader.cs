@@ -18,7 +18,7 @@ namespace BackgammonBot.Utils
 
         protected override string ResolveModuleName(string modname, string[] paths)
         {
-            return "BigLeagueBot." + modname + ".lua";
+            return "BackgammonBot." + modname + ".lua";
         }
     }
 }

@@ -20,7 +20,7 @@ namespace BackgammonBot.Utils
 
         public Script LoadScript(string name)
         {
-            name = "BigLeagueBot." + name + ".lua";
+            name = "BackgammonBot." + name + ".lua";
             Script script = new Script();
             string raw = LoadFile(name);
             

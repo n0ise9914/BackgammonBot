@@ -21,7 +21,7 @@ namespace BackgammonBot
 
         public void Init()
         {            
-            Console.WriteLine("Verify: " + _api.Verify(09376955226).message);
+            Console.WriteLine("Verify: " + _api.Verify(4199819896).message);
             Console.WriteLine("GetProfile: " + _api.GetProfile().profile.name);
             BackgammonBot bot = new BackgammonBot(_api);
             
